@@ -1,0 +1,7 @@
+.show--users {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: var(--margin-50);
+}
