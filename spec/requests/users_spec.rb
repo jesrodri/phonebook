@@ -10,7 +10,7 @@ RSpec.describe "Users", type: :request do
 
   describe "GET /show" do
     it "returns http success" do
-      get "/users/show"
+      get "/users/:id"
       expect(response).to have_http_status(:success)
     end
   end
@@ -24,7 +24,7 @@ RSpec.describe "Users", type: :request do
 
   describe "GET /create" do
     it "returns http success" do
-      get "/users/create"
+      post "/users/create"
       expect(response).to have_http_status(:success)
     end
   end
@@ -38,14 +38,14 @@ RSpec.describe "Users", type: :request do
 
   describe "GET /update" do
     it "returns http success" do
-      get "/users/update"
+      patch "/users/update"
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET /destroy" do
     it "returns http success" do
-      get "/users/destroy"
+      delete "/users/destroy"
       expect(response).to have_http_status(:success)
     end
   end
