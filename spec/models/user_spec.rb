@@ -1,10 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe User, :type => :model do
-  
-  subject {
-    User.create( name: 'Sarah', age: 29, bio: 'Love cats and photography.')
-  }
+  fixtures :users
+
+  subject (:user) { users(:user1) }
 
   context 'check username' do
     it 'is valid with valid attributes' do

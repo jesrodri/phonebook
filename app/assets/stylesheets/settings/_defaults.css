@@ -1,8 +1,4 @@
 :root {
-  --text-font-size:          15px;
-  --title-font-size:         20px;
-  --small-font-size:         10px;
-  --giant-font-size:         70px;
   --default-line-height:     1.25;
   --letter-spacing-2:        2px;
   --margin-5:                5px;
@@ -11,7 +7,7 @@
   --margin-80:               80px;
   --padding-8-25:            8px 25px;
   --padding-8-15:            8px 15px;
-  --padding-5:               5px;
+  --padding-3:               3px;
   --height-500:              500px;
   --width-3:                 3px;
   --width-135:               135px;
@@ -21,16 +17,21 @@
   --width-1137:              1137px;
   --shadow-1:                1px;
   --shadow-2:                2px;
-
+  
   --solid-border:            solid;
   --radius-30:               30px;
-
+  
   --opacity-40:              40%;
-
+  
   --font-weight-300:         300;
   --font-weight-400:         400;
   --font-weight-500:         500;
   --font-weight-600:         600;
   --font-weight-700:         700;
-  --font-montserrat:         'Red Hat Display', sans-serif;
+  --font-red-hat:            'Red Hat Display', sans-serif;
+  --small-font-size:         10px;
+  --text-font-size:          15px;
+  --title-font-size:         20px;
+  --big-font-size:           25px;
+  --giant-font-size:         70px;
 }

@@ -1,0 +1,53 @@
+phone1:
+  number: "1111-1111"
+  number_type: home
+  main_number: false
+  contact: contact1
+
+phone2:
+  number: "2222-2222"
+  number_type: cellphone
+  main_number: true
+  contact: contact1
+
+phone3:
+  number: "3333-3333"
+  number_type: work
+  main_number: false
+  contact: contact2
+
+phone4:
+  number: "4444-4444"
+  number_type: other
+  main_number: true
+  contact: contact2
+
+phone5:
+  number: "5555-5555"
+  number_type: home
+  main_number: true
+  contact: contact3
+
+phone6:
+  number: "6666-6666"
+  number_type: cellphone
+  main_number: true
+  contact: contact4
+
+phone7:
+  number: "7777-7777"
+  number_type: work
+  main_number: false
+  contact: contact5
+
+phone8:
+  number: "8888-8888"
+  number_type: home
+  main_number: true
+  contact: contact5
+
+phone9:
+  number: "9999-9999"
+  number_type: cellphone
+  main_number: true
+  contact: contact6

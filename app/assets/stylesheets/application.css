@@ -15,8 +15,12 @@
  */
 
 @import 'components/_divs.css';
+@import 'components/_headers.css';
+@import 'components/_links.css';
 @import 'components/_lists.css';
+@import 'components/_paragraphs.css';
 @import 'components/_spans.css';
+@import 'components/_table.css';
 @import 'elements/_body.css';
 @import 'generic/_box-sizing.css';
 @import 'generic/_resets.css';

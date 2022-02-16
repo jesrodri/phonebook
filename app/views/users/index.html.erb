@@ -1,8 +1,21 @@
 <div class="show--users">
-  <h1>Users</h1>
-  <ul class="list--users">
-    <% @users.each do |user| %>
-      <li class="item--users"><span class="span--name"><%= user.name %></span> : <%= user.bio %></li>
-    <% end %>
-  </ul>
+  <table class="table">
+    <thead>
+      <th colspan="3" class="table--header">USERS</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="table--title">Name</th>
+        <th class="table--title">Contacts</th>
+        <th class="table--title">Phone numbers</th>
+      </tr>
+      <% @users.each do |user| %>
+      <tr>
+        <td class="table--cell"><span class="link--name"><%= link_to user.name, user_path(user.id) %></span></td>
+        <td class="table--cell"><%= user.contacts.count %></td>
+        <td class="table--cell"><%= user.phones.count %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>

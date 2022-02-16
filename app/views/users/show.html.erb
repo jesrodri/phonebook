@@ -1,2 +1,37 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="show--users">
+  <h1 class="header--username"><%= @user.name %></h1>
+
+  <p class="p--details"><span class="span--name">Age:</span><%= @user.age %></p>
+  <p class="p--details"><span class="span--name">Bio:</span><%= @user.bio %></p>
+
+  <table class="table">
+    <% @user.contacts.each do |contact| %>
+    <thead>
+      <tr>
+        <th scope="row" class="table--title">Contact</th>
+        <td colspan="2" class="table--cell"><%= contact.name %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="table--title">Birthday</th>
+        <td colspan="2" class="table--cell"><%= contact.birthday %></td>
+      </tr>
+      <tr>
+        <th scope="col" class="table--title">Phone</th>
+        <th scope="col" class="table--title">Type</th>
+        <th scope="col" class="table--title">Main?</th>
+      </tr>
+      <% contact.phones.each do |phone| %>
+      <tr>
+        <td class="table--cell"><%= phone.number %></td>
+        <td class="table--cell"><%= phone.number_type %></td>
+        <td class="table--cell"><%= phone.main_number %></td>
+      </tr>
+      <% end %>
+    </tbody>
+    <% end %>
+  </table>
+
+  <%= link_to 'All Users', users_path(@users) %>
+</div>

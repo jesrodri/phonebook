@@ -1,10 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Contact, :type => :model do
+  fixtures :users
 
-  subject {
-    User.create( name: 'Sarah', age: 29, bio: 'Love cats and photography.' )
-  }
+    subject (:user) { users(:user1) }
 
     it 'is valid with valid attributes' do
       subject
