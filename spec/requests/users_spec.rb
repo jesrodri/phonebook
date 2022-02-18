@@ -1,10 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
+  fixtures :users
+
   describe "GET /index" do
+    subject (:users) { users(:user1, :user2, :user3) }
     it "returns http success" do
       get "/users"
       expect(response).to have_http_status(:success)
+    end
+    it "users get the right value" do
+      get "/users"
+      expect(assigns(:users)).to eq(User.all)
     end
   end
 
