@@ -1,0 +1,4 @@
+.span--name {
+  font-weight: var(--font-weight-600);
+  color: var(--pink);
+}

@@ -1,0 +1,14 @@
+user1:
+  name: Jessica
+  age: 29
+  bio: 'Love dogs and giraffes!'
+
+user2:
+  name: Sarah
+  age: 30
+  bio: 'Love cats and photography!'
+
+user3:
+  name: Beth
+  age: 26
+  bio: 'Scorpio with a Pisces rising'

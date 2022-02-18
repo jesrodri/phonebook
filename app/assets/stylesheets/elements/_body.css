@@ -1,0 +1,7 @@
+body {
+  color: var(--black);
+  font-family: var(--font-montserrat);
+  font-size: var(--text-font-size);
+  line-height: var(--default-line-height);
+  background-color: var(--gray);
+}

@@ -1,0 +1,8 @@
+<div class="show--users">
+  <h1>Users</h1>
+  <ul class="list--users">
+    <% @users.each do |user| %>
+      <li class="item--users"><span class="span--name"><%= user.name %></span> : <%= user.bio %></li>
+    <% end %>
+  </ul>
+</div>

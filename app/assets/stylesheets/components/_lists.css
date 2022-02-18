@@ -1,0 +1,9 @@
+.list--users {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item--users {
+  margin: var(--margin-10);
+}

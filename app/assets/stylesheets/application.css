@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'components/_divs.css';
+@import 'components/_lists.css';
+@import 'components/_spans.css';
+@import 'elements/_body.css';
+@import 'generic/_box-sizing.css';
+@import 'generic/_resets.css';
+@import 'settings/_colors.css';
+@import 'settings/_defaults.css';
