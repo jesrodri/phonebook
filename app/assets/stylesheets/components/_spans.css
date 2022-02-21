@@ -1,10 +1,14 @@
 .span--name {
   font-weight: var(--font-weight-600);
   color: var(--pink);
-  margin: var(--margin-10);
 }
 
 .link--name {
   text-decoration: none;
   color: var(--black);
+}
+
+.span--main {
+  font-weight: var(--font-weight-600);
+  color: var(--pink-100);
 }

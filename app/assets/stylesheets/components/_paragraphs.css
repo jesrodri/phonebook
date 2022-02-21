@@ -1,3 +1,10 @@
 .p--details {
   margin: var(--margin-10);
 }
+
+.user_button {
+  font-weight: var(--font-weight-600);
+  color: var(--pink-100);
+  text-transform: uppercase;
+  text-decoration: underline;
+}

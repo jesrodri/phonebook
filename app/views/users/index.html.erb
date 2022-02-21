@@ -1,21 +1,16 @@
-<div class="show--users">
-  <table class="table">
-    <thead>
-      <th colspan="3" class="table--header">USERS</th>
-    </thead>
-    <tbody>
-      <tr>
-        <th class="table--title">Name</th>
-        <th class="table--title">Contacts</th>
-        <th class="table--title">Phone numbers</th>
-      </tr>
-      <% @users.each do |user| %>
-      <tr>
-        <td class="table--cell"><span class="link--name"><%= link_to user.name, user_path(user.id) %></span></td>
-        <td class="table--cell"><%= user.contacts.count %></td>
-        <td class="table--cell"><%= user.phones.count %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div class="show_user">
+  <h1 class="header--name">USERS</h1>
+  <div class="user_cards">
+    <% @users.each do |user| %>
+    <div class="card">
+      <p><span class="span--name">Name:</span> <%= user.name %></p>
+      <p><span class="span--name">Contacts:</span> <%= user.contacts.count %></p>
+      <p><span class="span--name">Phone numbers:</span> <%= user.phones.count %></p>
+      <p class="user_button"><%= link_to 'Details', user_path(user.id) %></p>
+    </div>
+    <% end %>
+  </div>
+  <div class="button">
+    <%= link_to 'New User', users_new_path() %>
+  </div>
 </div>

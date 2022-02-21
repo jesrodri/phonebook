@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  root 'users#index'
   get 'users' => 'users#index'
   get 'users/new' => 'users#new'
-  post 'users/create' => 'users#create'
+  post 'users' => 'users#create'
   get 'users/edit' => 'users#edit'
   patch 'users/update' => 'users#update'
   delete 'users/destroy' => 'users#destroy'

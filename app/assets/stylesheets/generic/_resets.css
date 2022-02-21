@@ -6,6 +6,8 @@ h4,
 h5,
 h6,
 p,
+a,
+input,
 blockquote,
 pre,
 dl,
@@ -23,4 +25,20 @@ caption,
 hr {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  background: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: inherit;
+  width: inherit;
+  height: inherit;
 }
