@@ -1,4 +1,7 @@
-.header--username {
+.header--name {
   margin: var(--margin-10);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-4);
+  color: var(--pink-100);
+  font-size: var(--extra-big-font-size);
+  text-shadow: var(--shadow-1) var(--shadow-1) var(--shadow-2) var(--yellow-50);
 }

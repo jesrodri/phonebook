@@ -1,8 +1,106 @@
-.show--users {
+.show_user,
+  .new_user,
+  .form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 
   margin: var(--margin-50);
+}
+
+.user_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card,
+  .card--main,
+  .card--phone {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-wrap: wrap;
+
+  margin: var(--margin-10);
+  border: var(--width-3) var(--solid-border) var(--pink);
+  border-radius: var(--radius-30);
+  padding: var(--padding-15-25);
+  line-height: var(--line-height-2);
+  background-color: var(--yellow-50);
+}
+
+.card--main {
+  display: flex;
+  justify-content: space-between;
+  border: var(--width-3) var(--solid-border) var(--pink-100);
+}
+
+.card--phone {
+  padding: var(--padding-8-15);
+  line-height: var(--default-line-height);
+  background-color: var(--yellow-100);
+  border-radius: var(--radius-20);
+}
+
+.button {
+  margin: var(--margin-10);
+  border: var(--width-3) var(--solid-border) var(--pink-100);
+  border-radius: var(--radius-30);
+  padding: var(--padding-8-15);
+  line-height: var(--line-height-1-5);
+  background-color: var(--yellow-50);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-700);
+  letter-spacing: var(--letter-spacing-2);
+  color: var(--pink-100);
+  text-align: center;
+  width: var(--width-160);
+
+  display: flex;
+  justify-content: center;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+.form {
+  margin: var(--margin-10);
+}
+
+.form--div {
+  background-color: var(--yellow-50);
+  margin: var(--margin-10);
+  border: var(--width-3) var(--solid-border) var(--pink-100);
+  border-radius: var(--radius-30);
+  padding: var(--padding-8-15);
+}
+
+.label--div {
+  color: var(--pink);
+  font-size: var(--title-font-size);
+}
+
+.input--div,
+  .input--div__bio {
+  width: var(--width-250);
+}
+
+.input--div__bio {
+  height: var(--height-250);
+}
+
+.button--links {
+  display: flex;
+  justify-content: center;
+}
+
+.error--message {
+  color: var(--orange);
+  font-weight: var(--font-weight-700);
+  text-transform: uppercase;
 }

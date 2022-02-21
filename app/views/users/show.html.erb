@@ -1,37 +1,28 @@
-<div class="show--users">
-  <h1 class="header--username"><%= @user.name %></h1>
-
-  <p class="p--details"><span class="span--name">Age:</span><%= @user.age %></p>
-  <p class="p--details"><span class="span--name">Bio:</span><%= @user.bio %></p>
-
-  <table class="table">
+<div class="show_user">
+<h1 class="header--name"><%= @user.name %></h1>
+  <div class="card--main">
+      <p><span class="span--main">Age:</span> <%= @user.age %></p>
+      <p><span class="span--main">Bio:</span> <%= @user.bio %></p>
+  </div>
+  <div class="user_cards">
     <% @user.contacts.each do |contact| %>
-    <thead>
-      <tr>
-        <th scope="row" class="table--title">Contact</th>
-        <td colspan="2" class="table--cell"><%= contact.name %></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" class="table--title">Birthday</th>
-        <td colspan="2" class="table--cell"><%= contact.birthday %></td>
-      </tr>
-      <tr>
-        <th scope="col" class="table--title">Phone</th>
-        <th scope="col" class="table--title">Type</th>
-        <th scope="col" class="table--title">Main?</th>
-      </tr>
-      <% contact.phones.each do |phone| %>
-      <tr>
-        <td class="table--cell"><%= phone.number %></td>
-        <td class="table--cell"><%= phone.number_type %></td>
-        <td class="table--cell"><%= phone.main_number %></td>
-      </tr>
-      <% end %>
-    </tbody>
+    <div class="card">
+      <p><span class="span--name">Name:</span> <%= contact.name %></p>
+      <p><span class="span--name">Birthday:</span> <%= contact.birthday %></p>
+      <p class="user_cards">
+        <% contact.phones.each do |phone| %>
+        <div class="card--phone">
+          <p><span class="span--name">Phone:</span> <%= phone.number %></p>
+          <p><span class="span--name">Type:</span> <%= phone.number_type %></p>
+          <p><span class="span--name">Main?</span> <%= phone.main_number %></p>
+        </div>
+        <% end %>
+      </p>
+    </div>
     <% end %>
-  </table>
+  </div>
 
-  <%= link_to 'All Users', users_path(@users) %>
+  <div class="button">
+    <%= link_to 'All Users', users_path(@users) %>
+  </div>
 </div>
